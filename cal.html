@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="abc"/>
+        <br>
+        <br>
+        <input type="text" id="cde"/>
+        <table>
+            <tr>
+            <td><input type="button" id="a1"  onClick="plusBy()" Value="+" /></td>
+            <td><input type="button"  id="a2"onClick="minusBy()" Value="-" /></td>
+            <td><input type="button"  id="a3"onClick="multiplay()" Value="*" /></td>
+            <td><input type="button"  id="a4"onClick="diviedBy()" Value="/" /></td>
+            </tr>
+            </table>
+            <h1 id="result"></h1>
+            <input type="button"  value="result" onclick="result()"/>
+            <script>
+
+
+               
+                function plusBy(){
+                    num1=document.getElementById("abc").value;
+                    result1 = parseInt(num1);
+                    num2=document.getElementById("cde").value;
+                    result2 = parseInt(num2);
+                    num3=result1+result2;
+                    result=document.getElementById("result").innerHTML=(num3);
+                    console.log(num3);
+
+                    
+                }
+                function minusBy(){
+                    num1=document.getElementById("abc").value;
+              
+                    num2=document.getElementById("cde").value;
+                   
+                    num3=num1-num2;
+                    result=document.getElementById("result").innerHTML=(num3);
+                    console.log(num3);
+
+                }
+                function multiplay(){
+                    num1=document.getElementById("abc").value;
+                
+                
+                    num2=document.getElementById("cde").value;
+                    
+                    num3=num1*num2
+                    result=document.getElementById("result").innerHTML=(num3);
+                    console.log(num3);
+
+
+                }
+                function diviedBy(){
+                    num1=document.getElementById("abc").value;
+                
+                
+                num2=document.getElementById("cde").value;
+            
+                num3=num1/num2;
+                result=document.getElementById("result").innerHTML=(num3);
+                    console.log(num3);
+
+
+                } 
+                     const myarr=[];
+                      myarr.push();
+                       document.write(myarr);
+
+
+            </script>
+    </body>
+</html>
